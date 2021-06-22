@@ -48,7 +48,7 @@
                         <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
                     </div>
 
-                    <img src="{{ home.picture.url }}" alt="" class="home__img">
+                    <img src="{% static 'assets/img/queen.jpeg' %}" alt="" class="home__img">
                 </div>
             </section>
             
@@ -63,9 +63,9 @@
                     </div>
 
                     <div>
-                        <h2 class="about__subtitle">{{ about.heading }}</h2>
+                        <h2 class="about__subtitle">ABOUT ME</h2>
                         <span class="about__profession">{{ about.career }}</span>
-                        <p class="about__text">{{ about.description }}</p>
+                        <p class="about__text">currently am student in moringa school, am  trying to learn more and improve  skills in computer science and hopefully will make it to perfection.</p>
 
                         <div class="about__social">
 
@@ -112,12 +112,13 @@
                     {% for portfolio in portfolios %}
                     
                     <div class="portfolio__img">
-                        <img src="{{ portfolio.image.url }}" alt="">
+                        <img src="{% static 'assets/img/work1.png' %}" alt="">
 
                         <div class="portfolio__link">
                             <a href="{{ portfolio.link }}" class="portfolio__link-name">View details</a>
                         </div>
                     </div>
+
 
                     {% endfor %}
                     

@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'welcome.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# https://docs.djangoproject.com/en/3.2/ref/settings/#
 
 if config('MODE')=="dev":
    DATABASES = {
@@ -100,7 +100,8 @@ if config('MODE')=="dev":
        }
        
    }
-# production
+
+# # production
 else:
    DATABASES = {
        'default': dj_database_url.config(
